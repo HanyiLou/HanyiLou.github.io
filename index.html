@@ -4,109 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>楼涵怿 - 个人主页</title>
+    <!-- 引入Font Awesome图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
             color: #333;
         }
         .container {
-            max-width: 800px;
-            margin: 20px auto;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2, h3 {
-            color: #333;
-        }
-        h1 {
+        header {
             text-align: center;
-            margin-bottom: 20px;
+            padding: 50px 0;
+            background-color: #4CAF50;
+            color: white;
         }
-        h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
             margin-top: 20px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin-bottom: 10px;
-        }
-        .contact-info {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .contact-info a {
-            color: #333;
-            text-decoration: none;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
+            border: 5px solid white;
         }
         .section {
-            margin-bottom: 30px;
+            margin: 40px 0;
+        }
+        .section h2 {
+            font-size: 2em;
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        .section p {
+            line-height: 1.8;
+        }
+        .section ul {
+            list-style-type: none;
+            padding: 0;
         }
         .section ul li {
             margin-bottom: 10px;
         }
-        .skills ul {
-            columns: 2;
-            -webkit-columns: 2;
-            -moz-columns: 2;
+        .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .hobby-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 40px);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .hobby-card:hover {
+            transform: translateY(-10px);
+        }
+        .hobby-card i {
+            font-size: 2.5em;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        .hobby-card h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .hobby-card p {
+            margin: 10px 0 0;
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <header>
+        <img src="profile.jpg" alt="楼涵怿" class="profile-pic">
         <h1>楼涵怿</h1>
-        <div class="contact-info">
-            <p>+86 182-6755-8650 | <a href="mailto:hanyilou@zju.edu.cn">hanyilou@zju.edu.cn</a> | 浙江杭州</p>
-            <p>报考专业：管理学</p>
+        <p>心理学与管理的探索者 | 音乐与科技的爱好者</p>
+        <p>+86 182-6755-8650 | <a href="mailto:hanyilou@zju.edu.cn" style="color: white;">hanyilou@zju.edu.cn</a></p>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>关于我</h2>
+            <p>
+                我是浙江大学心理与行为科学系的本科生，辅修工业设计。我对心理学、管理学以及科技创新充满热情，喜欢探索人类行为与技术的交汇点。在校期间，我不仅专注于学术研究，还积极参与创业项目和社会实践活动，致力于将心理学与管理学应用于实际问题解决。
+            </p>
+            <p>
+                除了学术，我热爱音乐、摄影和骑行。我曾联合创办音乐工作室，策划并组织了多场心理健康工作坊，帮助他人通过艺术和音乐找到内心的平衡。
+            </p>
         </div>
 
         <div class="section">
-            <h2>教育经历</h2>
-            <ul>
-                <li><strong>浙江大学心理与行为科学系</strong> - 心理学/本科 (2022.09 - 2026.06)</li>
-                <li><strong>浙江大学计算机科学与技术学院</strong> - 工业设计/辅修 (2023.09 - 2026.06)</li>
-                <li><strong>学业成绩</strong>: GPA 4.00/4 (百分制: 91.46/100)，专业排名1/70</li>
-                <li><strong>核心课程</strong>: 管理心理学与实践、实验设计与心理统计、心理测量、微积分、C程序设计基础、同理心与沟通技巧、结构方程模型及其应用、发展心理学、心理学研究技术</li>
-                <li><strong>荣誉奖项</strong>: 国家奖学金、省政府奖学金、浙江大学一等奖学金、求是学院新东方奖学金、中国大学生心理与行为在线实验精英赛国家二等奖、全国大学生数学竞赛三等奖、浙江省高校暑期社会实践优秀调研报告评选决赛一等奖、丹青之星</li>
-            </ul>
+            <h2>我的项目</h2>
+            <div class="hobbies">
+                <div class="hobby-card">
+                    <i class="fas fa-music"></i>
+                    <h3>音乐工作室</h3>
+                    <p>联合创始人 & 运营负责人，创新商业模式。</p>
+                </div>
+                <div class="hobby-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>AI与组织决策</h3>
+                    <p>研究AI评分对员工满意度的影响。</p>
+                </div>
+                <div class="hobby-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>国企组织行为研究</h3>
+                    <p>基于管理心理学视角，分析企业绩效管理。</p>
+                </div>
+            </div>
         </div>
 
         <div class="section">
-            <h2>项目经历</h2>
-            <ul>
-                <li><strong>上海鸣回音乐工作室</strong> - 联合创始人 & 运营负责人 (2024.11 - 至今)</li>
-                <li><strong>AI与组织决策：探索智能化转型的行为科学依据</strong> - 核心成员 (2024.06 - 2024.12)</li>
-                <li><strong>心理学与管理学的交汇：基于管理心理学视角的国企组织行为比较研究</strong> - 负责人 (2024.09 - 2025.01)</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>校园组织及活动经历</h2>
-            <ul>
-                <li><strong>浙江大学心理与行为科学系 | "心知行"社会实践团队</strong> - 队长 (2024.11 - 至今)</li>
-                <li><strong>浙江大学国旗仪仗队 | 宣传部&组织部</strong> - 部长 (2022.09 - 2024.05)</li>
-                <li><strong>浙江大学知心社 & 数院学生会</strong> - 核心成员 (2023.10 - 至今)</li>
-            </ul>
-        </div>
-
-        <div class="section skills">
-            <h2>技能与兴趣爱好</h2>
-            <ul>
-                <li><strong>外语水平</strong>: 英文（四级：626 六级：565 雅思：还没考）</li>
-                <li><strong>软件能力</strong>: 精通MATLAB, SPSS, JASP, R等数据分析软件和C++, Python, JavaScript, VS Code等编程开发工具，熟练操作Adobe Creative Suite（包括Ps、Lrc、Ai、Pr）、Canvas、MS Office等软件</li>
-            </ul>
+            <h2>兴趣爱好</h2>
+            <div class="hobbies">
+                <div class="hobby-card">
+                    <i class="fas fa-camera"></i>
+                    <h3>摄影与剪辑</h3>
+                    <p>社交平台作品播放量超过3万次。</p>
+                </div>
+                <div class="hobby-card">
+                    <i class="fas fa-music"></i>
+                    <h3>拉丁舞</h3>
+                    <p>获得金星二级证书。</p>
+                </div>
+                <div class="hobby-card">
+                    <i class="fas fa-bicycle"></i>
+                    <h3>骑行</h3>
+                    <p>年均骑行1500公里，享受自然与自由。</p>
+                </div>
+            </div>
         </div>
     </div>
+
+    <footer>
+        <p>&copy; 2025 楼涵怿 | <a href="mailto:hanyilou@zju.edu.cn">联系我</a></p>
+    </footer>
 </body>
 </html>
